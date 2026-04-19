@@ -1,0 +1,77 @@
+{
+  "dataset": "TravisTorrent Java (5 projects, simulated from published statistics)",
+  "projects": [
+    "apache/commons-lang",
+    "apache/commons-math",
+    "junit-team/junit4",
+    "square/retrofit",
+    "google/guava"
+  ],
+  "total_releases": 95,
+  "total_builds": 3366,
+  "components_used": [
+    "A_Broken_Index",
+    "B_Avg_Fix_Time",
+    "D_Failed_TC_Ratio",
+    "E_Failed_Suite_Ratio"
+  ],
+  "components_excluded": {
+    "C_Downtime": "not in TravisTorrent",
+    "F_Variances": "not in TravisTorrent"
+  },
+  "table_ii": {
+    "1 sprint": {
+      "mlp_mae": 113.3,
+      "mlp_rmse": 140.8,
+      "mlp_dir": 0.7,
+      "gb_mae": 128.8,
+      "gb_rmse": 154.1,
+      "gb_dir": 0.7
+    },
+    "2 sprints": {
+      "mlp_mae": 119.1,
+      "mlp_rmse": 149.7,
+      "mlp_dir": 0.7,
+      "gb_mae": 135.9,
+      "gb_rmse": 170.9,
+      "gb_dir": 0.6
+    },
+    "3 sprints": {
+      "mlp_mae": 141.7,
+      "mlp_rmse": 180.0,
+      "mlp_dir": 0.6,
+      "gb_mae": 133.2,
+      "gb_rmse": 172.4,
+      "gb_dir": 0.7
+    }
+  },
+  "adaptive_weights": {
+    "apache/commons-lang": {
+      "fixed_rho": 0.597,
+      "adaptive_rho": 0.597,
+      "improvement_pct": 0.0
+    },
+    "apache/commons-math": {
+      "fixed_rho": 0.04,
+      "adaptive_rho": 0.022,
+      "improvement_pct": -45.0
+    },
+    "junit-team/junit4": {
+      "fixed_rho": 0.125,
+      "adaptive_rho": 0.188,
+      "improvement_pct": 50.0
+    },
+    "square/retrofit": {
+      "fixed_rho": 0.233,
+      "adaptive_rho": 0.207,
+      "improvement_pct": -11.1
+    },
+    "google/guava": {
+      "fixed_rho": -0.12,
+      "adaptive_rho": -0.12,
+      "improvement_pct": 0.0
+    }
+  },
+  "overall_pearson_r": 0.036,
+  "overall_spearman_rho": 0.012
+}
